@@ -1682,6 +1682,90 @@
       ],
       "site_fulltext": false,
       "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-gxt-tzgg",
+      "name": "河北省工信厅·通知公告",
+      "kind": "web_list",
+      "config": {
+        "url": "https://gxt.hebei.gov.cn/hbgyhxxht/xwzx32/tzgg83/index.html",
+        "parseMode": "html",
+        "itemSelector": "ul.clearfix > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "baseUrl": "https://gxt.hebei.gov.cn/hbgyhxxht/xwzx32/tzgg83/index.html",
+        "allowUrlPrefixes": [
+          "https://gxt.hebei.gov.cn/hbgyhxxht/xwzx32/tzgg83/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "工信"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-gxt-snzc",
+      "name": "河北省工信厅·省内政策",
+      "kind": "web_list",
+      "config": {
+        "url": "https://gxt.hebei.gov.cn/hbgyhxxht/zcfg30/snzc/index.html",
+        "parseMode": "html",
+        "itemSelector": "ul.clearfix > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "baseUrl": "https://gxt.hebei.gov.cn/hbgyhxxht/zcfg30/snzc/index.html",
+        "allowUrlPrefixes": [
+          "https://gxt.hebei.gov.cn/hbgyhxxht/zcfg30/snzc/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "工信"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-gxt-zcjd",
+      "name": "河北省工信厅·政策解读",
+      "kind": "web_list",
+      "config": {
+        "url": "https://gxt.hebei.gov.cn/hbgyhxxht/zcfg30/zcjd17/index.html",
+        "parseMode": "html",
+        "itemSelector": "ul.clearfix > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "baseUrl": "https://gxt.hebei.gov.cn/hbgyhxxht/zcfg30/zcjd17/index.html",
+        "allowUrlPrefixes": [
+          "https://gxt.hebei.gov.cn/hbgyhxxht/zcfg30/zcjd17/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "工信"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
     }
   ]
 }
