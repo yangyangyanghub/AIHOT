@@ -1,199 +1,114 @@
 {
   "groups": [
     {
-      "key": "company",
-      "name": "社区与机构",
-      "blurb": "按社区、园区与运营机构追踪动态"
-    },
-    {
       "key": "field",
-      "name": "产业方向",
-      "blurb": "按产业深挖：跨境电商、直播电商、AI 内容、钢铁制造……"
+      "name": "部门",
+      "blurb": "按部门追踪最新政策、新闻与培训考试"
     },
     {
       "key": "genre",
-      "name": "内容类型",
-      "blurb": "按体裁浏览：政策、场景、活动、教程、观点……"
+      "name": "内容形态",
+      "blurb": "按内容形态浏览：培训考试、职称评审、继续教育等"
     }
   ],
   "topics": [
     {
-      "slug": "qingnian-wujie",
-      "name": "青年武界 OPC 社区",
-      "group": "company",
-      "entityId": "qingnian-wujie",
-      "definition": "武安市青年武界·OPC数字创业社区的入驻、活动、场景与运营动态。"
-    },
-    {
-      "slug": "congtai-digital-trade",
-      "name": "丛台数字贸易产业园",
-      "group": "company",
-      "entityId": "congtai-digital-trade",
-      "aliases": ["创栖里"],
-      "definition": "丛台区数字贸易产业园 OPC 社区的餐饮住宿数字化、政务服务与活动动态。"
-    },
-    {
-      "slug": "hd-kczg",
-      "name": "邯郸科创智谷",
-      "group": "company",
-      "entityId": "hd-kczg",
-      "definition": "邯郸科创智谷 OPC 创享社区的入驻、活动与 AI 科创服务动态。"
-    },
-    {
-      "slug": "hd-kccy",
-      "name": "邯郸科创产业园",
-      "group": "company",
-      "entityId": "hd-kccy",
-      "definition": "邯郸科创产业园 OPC 创享空间的免租工位、算力支持与企业入驻动态。"
-    },
-    {
-      "slug": "fengfeng-wenchuang",
-      "name": "峰峰文创 OPC 社区",
-      "group": "company",
-      "entityId": "fengfeng-wenchuang",
-      "aliases": ["七厂 OPC 社区", "聚创园", "响堂山 OPC 社区"],
-      "definition": "峰峰矿区七厂 OPC 社区、聚创园、响堂山 OPC 社区的磁州窑文创与场景订单动态。"
-    },
-    {
-      "slug": "chengan-liuliangcheng",
-      "name": "成安流量城",
-      "group": "company",
-      "entityId": "chengan-liuliangcheng",
-      "definition": "成安县流量城电商产业园 OPC 跨境社区的算力券、直播与 AI 电商动态。"
-    },
-    {
-      "slug": "guantao-kuajing",
-      "name": "馆陶跨境电商园",
-      "group": "company",
-      "entityId": "guantao-kuajing",
-      "definition": "馆陶县跨境电商产业园的入驻、平台对接与 OPC 培育动态。"
-    },
-    {
-      "slug": "guangping-opc",
-      "name": "广平 OPC 社区",
-      "group": "company",
-      "entityId": "guangping-opc",
-      "aliases": ["鹅城智谷", "智汇广平"],
-      "definition": "广平县 OPC 社区、智汇广平沙龙、数据标注产业与鹅城智谷平台动态。"
-    },
-    {
-      "slug": "cross-border",
-      "name": "跨境电商",
+      "slug": "natural-resources",
+      "name": "自然资源",
       "group": "field",
-      "tags": ["跨境电商"],
-      "definition": "一人公司做跨境电商：平台规则、选品、物流、结算与出海经验。"
+      "tags": ["自然资源"],
+      "definition": "自然资源部、河北省自然资源厅、邯郸市自然资源和规划局发布的土地、矿产、测绘、国土空间规划政策、动态与培训信息。"
     },
     {
-      "slug": "live-commerce",
-      "name": "直播电商",
+      "slug": "housing-urban-rural",
+      "name": "住建",
       "group": "field",
-      "tags": ["直播电商"],
-      "definition": "直播带货、共享直播间、主播培训与本地供应链对接。"
+      "tags": ["住建"],
+      "definition": "住房和城乡建设部、省住建厅、市住建与城管部门的房地产、城乡建设、工程质量安全、资质与住房保障政策动态。"
     },
     {
-      "slug": "ai-content",
-      "name": "AI 内容创作",
+      "slug": "ecology-environment",
+      "name": "生态环境",
       "group": "field",
-      "tags": ["AI漫剧"],
-      "definition": "AI 漫剧、短视频、数字文创等一人公司可承接的内容生产场景。"
+      "tags": ["生态环境"],
+      "definition": "生态环境部、省生态环境厅、市生态环境局的污染防治、环评、监测执法政策与动态。"
     },
     {
-      "slug": "steel-manufacturing",
-      "name": "钢铁与制造",
+      "slug": "industry-information",
+      "name": "工业和信息化",
       "group": "field",
-      "tags": ["钢铁/制造"],
-      "definition": "钢铁、紧固件等传统产业的 AI 场景、数据治理与数字化转型需求。"
+      "tags": ["工信"],
+      "definition": "工业和信息化部、省工信厅、市工信局的工业运行、中小企业、数字化转型、无线电与产业政策。"
     },
     {
-      "slug": "shared-office",
-      "name": "共享办公与工位",
+      "slug": "development-reform",
+      "name": "发改",
       "group": "field",
-      "tags": ["共享办公"],
-      "definition": "OPC 社区的免租工位、独立办公室、会议室与共享空间政策。"
+      "tags": ["发改"],
+      "definition": "国家发展改革委、省发改委、市发改委的规划、投资、价格、能源、招投标与产业政策。"
     },
     {
-      "slug": "compute-tools",
-      "name": "算力与 AI 工具",
+      "slug": "transport",
+      "name": "交通运输",
       "group": "field",
-      "tags": ["算力/AI工具"],
-      "definition": "算力券、大模型工具、AI 软件与一人公司可用技术资源。"
+      "tags": ["交通运输"],
+      "definition": "交通运输部、省交通运输厅、市交通运输局的公路、铁路、港航、运输管理与项目动态。"
     },
     {
-      "slug": "gov-service",
-      "name": "政务服务",
+      "slug": "science-technology",
+      "name": "科学技术",
       "group": "field",
-      "tags": ["政务服务"],
-      "definition": "企业开办、一件事集成办理、OPC 专区与政务服务改革。"
+      "tags": ["科学技术"],
+      "definition": "科技部、省科技厅、市科技局的项目申报、平台建设、成果转化、高新技术企业政策。"
     },
     {
-      "slug": "finance-tax-legal",
-      "name": "财税与法务",
+      "slug": "data-government-service",
+      "name": "数据和政务服务",
       "group": "field",
-      "tags": ["财税", "法务"],
-      "definition": "记账报税、补贴申报、合同审查与知识产权等创业服务。"
+      "tags": ["数据和政务服务"],
+      "definition": "国家数据局、省数据和政务服务局、市行政审批局与数据集团的数据要素、数字政府、政务服务改革动态。"
     },
     {
-      "slug": "talent-training",
-      "name": "人才与培训",
+      "slug": "forestry-grassland",
+      "name": "林业",
       "group": "field",
-      "tags": ["人才培训"],
-      "definition": "青年 AI 技能培训、创业训练营、人才政策与招聘对接。"
+      "tags": ["林业"],
+      "definition": "国家林业和草原局、省林草局、市林业局的森林草原资源、生态修复、林长制与产业政策。"
     },
     {
-      "slug": "policy-releases",
-      "name": "政策发布",
+      "slug": "water-resources",
+      "name": "水利",
+      "group": "field",
+      "tags": ["水利"],
+      "definition": "水利部、省水利厅、市水利局的水资源、防汛抗旱、河湖长制与水利工程动态。"
+    },
+    {
+      "slug": "agriculture-rural",
+      "name": "农业农村",
+      "group": "field",
+      "tags": ["农业农村"],
+      "definition": "农业农村部、省农业农村厅、市农业农村局的粮食生产、乡村振兴、惠农补贴与产业政策。"
+    },
+    {
+      "slug": "human-resources",
+      "name": "人社",
+      "group": "field",
+      "tags": ["人社"],
+      "definition": "人力资源和社会保障部、省人社厅、市人社局的人事考试、职业资格、职称评审、继续教育、就业与社保政策。"
+    },
+    {
+      "slug": "general-government",
+      "name": "综合政务",
+      "group": "field",
+      "tags": ["综合"],
+      "definition": "市政府、跨部门联合发布、无法归入单一部门的政务信息。"
+    },
+    {
+      "slug": "training-exam",
+      "name": "培训考试",
       "group": "genre",
-      "tags": ["政策发布"],
-      "definition": "国家、省、市、区县发布的 OPC 政策、办法、细则与申报通知。"
-    },
-    {
-      "slug": "scenario-open",
-      "name": "场景开放",
-      "group": "genre",
-      "tags": ["场景开放"],
-      "definition": "政府与链主发布的 AI 应用场景清单、需求清单与开放计划。"
-    },
-    {
-      "slug": "orders",
-      "name": "订单机会",
-      "group": "genre",
-      "tags": ["订单机会"],
-      "definition": "可以承接的真实订单、供需对接与商业化机会。"
-    },
-    {
-      "slug": "events",
-      "name": "活动通知",
-      "group": "genre",
-      "tags": ["活动通知"],
-      "definition": "沙龙、培训、路演、大赛、对接会的报名与回顾。"
-    },
-    {
-      "slug": "community-news",
-      "name": "社区动态",
-      "group": "genre",
-      "tags": ["社区动态"],
-      "definition": "OPC 社区开园、入驻、运营数据与服务能力变化。"
-    },
-    {
-      "slug": "tutorials",
-      "name": "实操指南",
-      "group": "genre",
-      "tags": ["教程/实操"],
-      "definition": "注册、财税、法务、补贴申报与 AI 工具使用的可复用做法。"
-    },
-    {
-      "slug": "opinions",
-      "name": "观点与观察",
-      "group": "genre",
-      "tags": ["观点/趋势"],
-      "definition": "OPC 行业观察、访谈、复盘与趋势判断。"
-    },
-    {
-      "slug": "non-local",
-      "name": "外地经验",
-      "group": "genre",
-      "tags": ["外地经验"],
-      "definition": "其他城市和地区的 OPC 政策、社区与场景经验，供邯郸参考。"
+      "tags": ["培训通知", "考试计划", "职称评审", "继续教育"],
+      "definition": "跨部门的培训、考试、职称与继续教育通知汇总。"
     }
   ]
 }

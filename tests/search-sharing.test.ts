@@ -50,7 +50,7 @@ test('a burst of identical searches completes without consuming the distinct-sea
 
 test('overlapping searches keep their category and explicit clock, and retain overload protection', async () => {
   const [models, other] = await blocked(() => Promise.all([
-    loadPool({ ...query, category: 'policy' }), loadPool({ ...query, category: 'scenario' }),
+    loadPool({ ...query, category: 'policy' }), loadPool({ ...query, category: 'training' }),
   ]));
   assert.deepEqual(models.items.map(i => i.id), [id]);
   assert.deepEqual(other.items, []);

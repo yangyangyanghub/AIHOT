@@ -20,29 +20,29 @@ export const EDITION_WHEN = {
 
 export const SITE = {
   /** 站名：导航、页面标题、分享图、RSS、MCP、后台都用它。 */
-  name: "OPCHOT",
+  name: "邯郸政务信源",
   /**
-   * 行业词：拼进默认说法里，比如“OPC 日报”“OPC 动态”。
+   * 行业词：拼进默认说法里，比如“政务 日报”“政务 动态”。
    */
-  subject: "OPC",
+  subject: "政务",
   /** 首页的完整标题（浏览器标签、搜索结果）。 */
-  homeTitle: "OPCHOT — 邯郸 OPC 社区动态 · 每日精选与日报",
+  homeTitle: "邯郸政务信源 — 部门政策、新闻与培训考试一站汇总",
   /** 主题目录页（/topics）的标题。 */
-  topicsTitle: "OPC 主题：社区、政策、场景与活动的最新动态",
+  topicsTitle: "部门主题：按自然资源、住建、生态环境等部门看最新政策与动态",
   /** 反馈表单输入框里的示例。 */
-  feedbackExample: "例如：我在搜索某个社区的政策时遇到……我原本想……",
+  feedbackExample: "例如：我想找某个部门的政策原文或考试报名时间……",
   /** 反馈页标题下面的一句话。 */
-  feedbackLead: "发现 bug、想要的功能、看不顺眼的地方，都可以告诉我们。",
+  feedbackLead: "找不到的部门、缺失的信源、想看的政策或考试信息，都可以告诉我们。",
   /** 反馈表单邮箱框里的提示。 */
   feedbackEmailHint: "留下邮箱，我们可以回信联系你",
   /** 一句话介绍：搜索引擎、分享卡片、RSS、llms.txt 会用。 */
-  description: `盯着邯郸及全国一人公司（OPC）社区、政策与场景信源，挑出对创业者有用的动态，${EDITION_WHEN.daily} 出一份日报。`,
+  description: `盯住国家、省、市三级部门信源，按自然资源、住建、生态环境、工信、发改、交通运输、科学技术、数据和政务服务、林业等部门，汇总最新政策、新闻与培训考试信息，${EDITION_WHEN.daily} 出一份政务日报。`,
   /** llms.txt 里一句话介绍下面的一段详细介绍（选填）。 */
   llmsIntro: null as string | null,
   /** 一行小字：分享图、海报下方。 */
-  tagline: "值得关注的 OPC 动态",
+  tagline: "值得关注的政务动态",
   /** 搜索引擎读到的关键词（首页结构化数据）。 */
-  keywords: ["OPC", "一人公司", "邯郸 OPC", "OPC 社区", "OPC 政策", "OPC 场景"] as string[],
+  keywords: ["邯郸政务", "河北政务", "部门政策", "政策发布", "培训考试", "自然资源", "住建", "生态环境", "工信", "发改", "交通运输", "数据和政务服务"] as string[],
   /**
    * 搜索引擎站长平台的网站验证（选填）：meta 名 → 平台给的验证码，放在首页的 head 里。
    * 比如 "baidu-site-verification": "codeva-…"、"msvalidate.01": "…"。验证通过后也要留着，平台会定期复查。
@@ -53,14 +53,14 @@ export const SITE = {
   /** 界面语言（HTML lang、og:locale）。 */
   locale: "zh-CN",
   /** 默认域名，只在没设置 SITE_URL 时使用。 */
-  defaultUrl: "http://localhost:3000",
+  defaultUrl: "http://localhost:3100",
   /** 标准图标（favicon.ico、icon.png、icon-192.png、apple-icon.png、logo.svg）以外也放在网站根目录的图标，site/brand/ 里的文件名（选填）；manifest.webmanifest 或外站引用了它们时用。 */
   rootIcons: [] as string[],
   /**
    * MCP 工具名的前缀（小写字母、数字、下划线），工具会叫 myhot_get_latest、myhot_search……
    * 已经有人接入后就不要再改。
    */
-  mcpPrefix: "opchot",
+  mcpPrefix: "hdgov",
   /**
    * 公开接口（MCP、OpenAPI、llms.txt）的版本号，只升不降。
    * 改了接口里已有的字段或含义时升主版本，并在部署说明里写清。
@@ -80,12 +80,12 @@ export const SITE = {
   poweredBy: { name: "AIHOT", url: "https://aihot.news" } as { name: string; url: string } | null,
   /** 结构化数据里的网站运营者（搜索引擎用）。 */
   organization: {
-    name: "OPCHOT",
+    name: "邯郸政务信源",
     /** 创始人（选填）。 */
     founder: null as Founder | null,
   },
   /** 抓取信源时报上的名字和版本（User-Agent 里用），不要冒用别的站。 */
-  crawlerName: "OPCHOTBot/1.0",
+  crawlerName: "HDGOVBot/1.0",
 } as const;
 
 /** 使用规则和隐私说明两页（正文在 pages/ 里）。 */
