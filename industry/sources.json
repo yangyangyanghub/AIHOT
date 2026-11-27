@@ -1,98 +1,1687 @@
 {
   "$comment": "HDGOV 信源：按 国家/河北省/邯郸市 三层 × 部门 组织。全部经 Wechat2RSS 镜像采集；每源 tags=[层级,部门]。首启由 scripts/seed.ts 导入，已存在不覆盖。",
   "sources": [
-    { "id": "gov-mnr", "name": "自然资源部", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3080562432.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-mnr-portal", "name": "自然资源部门户网站", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3259017834.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-mnr-info", "name": "自然资源部信息中心", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3943643485.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-mnr-survey", "name": "自然资源部测绘发展研究中心", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/2396540957.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-territorial-planning", "name": "中国国土空间规划", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3297705177.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-land-society", "name": "中国土地学会订阅号", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3263513438.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-nr-thinktank", "name": "自然资源智库", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3586264340.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-urban-planning", "name": "中国城市规划", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3075152290.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-csgpc", "name": "中国测绘学会", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3255063612.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-nr-lecture", "name": "自然资源大讲堂", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3964234546.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-inature", "name": "i自然全媒体", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/2395962653.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hebei-nr", "name": "河北自然资源", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3240136776.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hebei-csgpc", "name": "河北省测绘学会", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3939487016.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-nr", "name": "邯郸自然资源和规划", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3900266298.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 60, "tags": ["邯郸市", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-national-ndrc", "name": "国家发展改革委", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3070196162.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "发改"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hebei-ndrc", "name": "河北省发改委", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3573777656.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "发改"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-national-data-bureau", "name": "国家数据局", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3931590079.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "数据和政务服务"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-admin-approval", "name": "邯郸行政审批", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3547177968.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 60, "tags": ["邯郸市", "数据和政务服务"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-data-group", "name": "邯郸市数据集团", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3901751878.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 60, "tags": ["邯郸市", "数据和政务服务"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-hd-science-tech", "name": "邯郸市科学技术局", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3001128131.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 60, "tags": ["邯郸市", "科学技术"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-hebei-ecology", "name": "河北生态环境发布", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3871765547.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "生态环境"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-hebei-housing", "name": "河北住建", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3276610176.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "住建"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-nfga", "name": "国家林业和草原局", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3888624724.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "林业"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hebei-forestry", "name": "河北省林业和草原局", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3860753622.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "林业"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-hebei-water", "name": "河北水利", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3002158959.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "水利"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hebei-agriculture", "name": "河北省农业农村厅", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3225168269.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "农业农村"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-hd-talent-web", "name": "邯郸人才网订阅号", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3582877752.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 60, "tags": ["邯郸市", "人社"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-talent-group", "name": "邯郸市人才发展集团", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3866904859.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 60, "tags": ["邯郸市", "人社"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-hd-publish", "name": "邯郸发布", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3089929225.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 60, "tags": ["邯郸市", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-hd-ndrc-web", "name": "邯郸市发改委·通知公告", "kind": "web_list", "config": { "url": "http://fgw.hd.gov.cn/zwgk/xxgk/fdzdgknr/tzgg/", "parseMode": "html", "itemSelector": ".zfxxgk_zdgkc ul > li", "linkSelector": "a", "titleSelector": "a", "publishedAtSelector": "b", "baseUrl": "http://fgw.hd.gov.cn/zwgk/xxgk/fdzdgknr/tzgg/", "allowUrlPrefixes": ["http://fgw.hd.gov.cn/zwgk/xxgk/fdzdgknr/tzgg/"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["邯郸市", "发改"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-housing-web", "name": "邯郸市住建局·政策法规", "kind": "web_list", "config": { "url": "http://zjj.hd.gov.cn/html/zhengcefagui/", "parseMode": "html", "itemSelector": "div.list_6 > div", "linkSelector": "a", "titleSelector": "a", "baseUrl": "http://zjj.hd.gov.cn/html/zhengcefagui/", "allowUrlPrefixes": ["http://zjj.hd.gov.cn/html/zhengcefagui/"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["邯郸市", "住建"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-agri-web", "name": "邯郸市农业农村局·政策", "kind": "web_list", "config": { "url": "http://nyncj.hd.gov.cn/index.php?case=archive&act=list&catid=10", "parseMode": "html", "itemSelector": "li:has(.child)", "linkSelector": "a", "titleSelector": "a", "publishedAtSelector": "span", "baseUrl": "http://nyncj.hd.gov.cn/", "allowUrlPrefixes": ["http://nyncj.hd.gov.cn/index.php?case=archive&act=show"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["邯郸市", "农业农村"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-mot-web", "name": "邯郸市交通运输局·文件公告", "kind": "web_list", "config": { "url": "http://jtj.hd.gov.cn/zwgk/wjgg/index.htm", "parseMode": "html", "itemSelector": "div.tzgg ul li", "linkSelector": "a", "titleSelector": "a", "baseUrl": "http://jtj.hd.gov.cn/zwgk/wjgg/", "allowUrlPrefixes": ["http://jtj.hd.gov.cn/zwgk/wjgg/"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["邯郸市", "交通运输"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-zrgh-gggs-web", "name": "邯郸市自然资源和规划局·公告公示", "kind": "web_list", "config": { "url": "http://zrgh.hd.gov.cn/xwdt/gggs/", "parseMode": "html", "itemSelector": "ul.nt-entry-tp > li", "linkSelector": "a", "titleSelector": "a", "baseUrl": "http://zrgh.hd.gov.cn/xwdt/gggs/", "allowUrlPrefixes": ["http://zrgh.hd.gov.cn/xwdt/gggs/"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["邯郸市", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-zrgh-flfg-web", "name": "邯郸市自然资源和规划局·政策法规", "kind": "web_list", "config": { "url": "http://zrgh.hd.gov.cn/xxgk/fdgknr/flfg", "parseMode": "html", "itemSelector": "div.zfxxgk_zd2 ul > li", "linkSelector": "a", "titleSelector": "a", "baseUrl": "http://zrgh.hd.gov.cn/xxgk/fdgknr/flfg", "allowUrlPrefixes": ["http://zrgh.hd.gov.cn/xxgk/fdgknr/flfg/", "https://zrzy.hebei.gov.cn/"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["邯郸市", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-hebei-mot-web", "name": "河北省交通运输厅·省厅要闻", "kind": "web_list", "config": { "url": "https://jtt.hebei.gov.cn/jtyst/jtzx/styw", "parseMode": "html", "itemSelector": "div.zc_p_listNr ul li", "linkSelector": "a", "titleSelector": "a", "baseUrl": "https://jtt.hebei.gov.cn/jtyst/jtzx/styw", "allowUrlPrefixes": ["https://jtt.hebei.gov.cn/jtyst/jtzx/styw/"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "交通运输"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hebei-ecology-web", "name": "河北省生态环境厅·省厅动态", "kind": "web_list", "config": { "url": "https://hbepb.hebei.gov.cn/hbhjt/xwzx/jihuanyaowen/", "parseMode": "html", "itemSelector": "div.p_list ul li", "linkSelector": "a", "titleSelector": "a", "baseUrl": "https://hbepb.hebei.gov.cn/hbhjt/xwzx/jihuanyaowen/", "allowUrlPrefixes": ["https://hbepb.hebei.gov.cn/hbhjt/"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "生态环境"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hebei-water-web", "name": "河北省水利厅·水利要闻", "kind": "web_list", "config": { "url": "http://slt.hebei.gov.cn/a/zx/txww/", "parseMode": "html", "itemSelector": "ul.item_lst li", "linkSelector": "span.fl a", "titleSelector": "span.fl a", "baseUrl": "http://slt.hebei.gov.cn/a/zx/txww/", "allowUrlPrefixes": ["http://slt.hebei.gov.cn/a/"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "水利"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hebei-szj-web", "name": "河北省数据和政务服务局·行政执法公开", "kind": "web_list", "config": { "url": "http://szj.hebei.gov.cn/zwgk/002001/002001005/goverList.html", "parseMode": "html", "itemSelector": "li.info-item", "linkSelector": "a", "titleSelector": "a", "publishedAtSelector": "span.info-time", "baseUrl": "http://szj.hebei.gov.cn/zwgk/002001/002001005/goverList.html", "allowUrlPrefixes": ["http://szj.hebei.gov.cn/"], "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["河北省", "数据和政务服务"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-miit", "name": "工信微报（工业和信息化部）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/2399501768.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "工信"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-mee", "name": "生态环境部", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3269523047.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "生态环境"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-mot", "name": "交通运输部", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3270400495.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "交通运输"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-mwr", "name": "中国水利（水利部）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3553741093.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "水利"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-hd-miit", "name": "邯郸工信", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3238432963.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 60, "tags": ["邯郸市", "工信"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-wechat-pending-3903416442", "name": "待确认公众号（3903416442）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3903416442.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3077105992", "name": "待确认公众号（3077105992）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3077105992.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3091075063", "name": "待确认公众号（3091075063）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3091075063.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3257455681", "name": "待确认公众号（3257455681）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3257455681.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3265436760", "name": "待确认公众号（3265436760）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3265436760.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3080075386", "name": "待确认公众号（3080075386）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3080075386.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3004128450", "name": "待确认公众号（3004128450）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3004128450.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3510978418", "name": "待确认公众号（3510978418）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3510978418.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3002136124", "name": "待确认公众号（3002136124）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3002136124.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3079058680", "name": "待确认公众号（3079058680）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3079058680.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3295169138", "name": "待确认公众号（3295169138）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3295169138.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3524284641", "name": "待确认公众号（3524284641）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3524284641.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3098992634", "name": "待确认公众号（3098992634）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3098992634.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-wechat-pending-3255918706", "name": "待确认公众号（3255918706，已出11条待识别）", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3255918706.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-
-
-    { "id": "gov-manual-intake", "name": "人工报送：部门公告", "kind": "external", "config": {}, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 60, "tags": ["邯郸市", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-stats-zxfb", "name": "国家统计局·数据发布", "kind": "rss", "config": { "feedUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-stats-sjjd", "name": "国家统计局·数据解读", "kind": "rss", "config": { "feedUrl": "https://www.stats.gov.cn/sj/sjjd/rss.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "综合"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-sastind-fagui", "name": "国防科工局·政策法规", "kind": "rss", "config": { "feedUrl": "https://www.sastind.gov.cn/n10086167/n10086221/rss.xml", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "工信"], "site_fulltext": false, "syndicate_fulltext": false },
-
-    { "id": "gov-rsshub-mee-ywdt", "name": "生态环境部·环境要闻（RSSHub）", "kind": "rss", "config": { "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/mee/ywdt/hjywnews", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "生态环境"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-rsshub-miit-zcjd", "name": "工信部·政策解读（RSSHub）", "kind": "rss", "config": { "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/miit/zcjd", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "工信"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-rsshub-miit-wjgs", "name": "工信部·文件公示（RSSHub）", "kind": "rss", "config": { "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/miit/wjgs", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "工信"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-rsshub-moa-zcjd", "name": "农业农村部·政策解读（RSSHub）", "kind": "rss", "config": { "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/moa/suburl/gk/zcjd/", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1", "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "农业农村"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-rsshub-moa-zdscxx", "name": "农业农村部·数据（RSSHub）", "kind": "rss", "config": { "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/moa/zdscxx", "_aihot": { "initialBackfillLimit": 10 } }, "tier": "T1_5", "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "农业农村"], "site_fulltext": false, "syndicate_fulltext": false },
-
-
-    { "id": "gov-digital-nr", "name": "数智自然资源", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3207590652.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T1_5", "enabled": false, "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-nr-forum", "name": "自然资源讲坛", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3599022811.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T1_5", "enabled": false, "participation_mode": "editorial", "interval_minutes": 120, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-land-observer", "name": "土地观察", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3227070929.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "自然资源"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-gis-edu", "name": "GIS高等教育", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3247388884.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "科学技术"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-bid-expert", "name": "评标专家和评审专家", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3872885250.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "发改"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-tender-expert", "name": "招标采购专家通", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3935492513.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "发改"], "site_fulltext": false, "syndicate_fulltext": false },
-    { "id": "gov-bid-db", "name": "招标-投标-评标入库", "kind": "rss", "config": { "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3988431695.xml", "_aihot": { "initialBackfillLimit": 5 } }, "tier": "T2", "enabled": false, "participation_mode": "editorial", "interval_minutes": 180, "tags": ["国家", "发改"], "site_fulltext": false, "syndicate_fulltext": false }
+    {
+      "id": "gov-mnr",
+      "name": "自然资源部",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3080562432.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-mnr-portal",
+      "name": "自然资源部门户网站",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3259017834.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-mnr-info",
+      "name": "自然资源部信息中心",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3943643485.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-mnr-survey",
+      "name": "自然资源部测绘发展研究中心",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/2396540957.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-territorial-planning",
+      "name": "中国国土空间规划",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3297705177.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-land-society",
+      "name": "中国土地学会订阅号",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3263513438.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-nr-thinktank",
+      "name": "自然资源智库",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3586264340.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-urban-planning",
+      "name": "中国城市规划",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3075152290.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-csgpc",
+      "name": "中国测绘学会",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3255063612.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-nr-lecture",
+      "name": "自然资源大讲堂",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3964234546.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-inature",
+      "name": "i自然全媒体",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/2395962653.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-nr",
+      "name": "河北自然资源",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3240136776.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-csgpc",
+      "name": "河北省测绘学会",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3939487016.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-nr",
+      "name": "邯郸自然资源和规划",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3900266298.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "邯郸市",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-national-ndrc",
+      "name": "国家发展改革委",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3070196162.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "发改"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-ndrc",
+      "name": "河北省发改委",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3573777656.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "发改"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-national-data-bureau",
+      "name": "国家数据局",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3931590079.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "数据和政务服务"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-admin-approval",
+      "name": "邯郸行政审批",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3547177968.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "邯郸市",
+        "数据和政务服务"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-data-group",
+      "name": "邯郸市数据集团",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3901751878.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "邯郸市",
+        "数据和政务服务"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-science-tech",
+      "name": "邯郸市科学技术局",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3001128131.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "邯郸市",
+        "科学技术"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-ecology",
+      "name": "河北生态环境发布",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3871765547.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "生态环境"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-housing",
+      "name": "河北住建",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3276610176.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "住建"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-nfga",
+      "name": "国家林业和草原局",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3888624724.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "林业"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-forestry",
+      "name": "河北省林业和草原局",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3860753622.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "林业"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-water",
+      "name": "河北水利",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3002158959.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "水利"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-agriculture",
+      "name": "河北省农业农村厅",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3225168269.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "农业农村"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-talent-web",
+      "name": "邯郸人才网订阅号",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3582877752.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "邯郸市",
+        "人社"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-talent-group",
+      "name": "邯郸市人才发展集团",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3866904859.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "邯郸市",
+        "人社"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-publish",
+      "name": "邯郸发布",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3089929225.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "邯郸市",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-ndrc-web",
+      "name": "邯郸市发改委·通知公告",
+      "kind": "web_list",
+      "config": {
+        "url": "http://fgw.hd.gov.cn/zwgk/xxgk/fdzdgknr/tzgg/",
+        "parseMode": "html",
+        "itemSelector": ".zfxxgk_zdgkc ul > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtSelector": "b",
+        "baseUrl": "http://fgw.hd.gov.cn/zwgk/xxgk/fdzdgknr/tzgg/",
+        "allowUrlPrefixes": [
+          "http://fgw.hd.gov.cn/zwgk/xxgk/fdzdgknr/tzgg/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "邯郸市",
+        "发改"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-housing-web",
+      "name": "邯郸市住建局·政策法规",
+      "kind": "web_list",
+      "config": {
+        "url": "http://zjj.hd.gov.cn/html/zhengcefagui/",
+        "parseMode": "html",
+        "itemSelector": "div.list_6 > div",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "baseUrl": "http://zjj.hd.gov.cn/html/zhengcefagui/",
+        "allowUrlPrefixes": [
+          "http://zjj.hd.gov.cn/html/zhengcefagui/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "邯郸市",
+        "住建"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-agri-web",
+      "name": "邯郸市农业农村局·政策",
+      "kind": "web_list",
+      "config": {
+        "url": "http://nyncj.hd.gov.cn/index.php?case=archive&act=list&catid=10",
+        "parseMode": "html",
+        "itemSelector": "li:has(.child)",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtSelector": "span",
+        "baseUrl": "http://nyncj.hd.gov.cn/",
+        "allowUrlPrefixes": [
+          "http://nyncj.hd.gov.cn/index.php?case=archive&act=show"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "邯郸市",
+        "农业农村"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-mot-web",
+      "name": "邯郸市交通运输局·文件公告",
+      "kind": "web_list",
+      "config": {
+        "url": "http://jtj.hd.gov.cn/zwgk/wjgg/index.htm",
+        "parseMode": "html",
+        "itemSelector": "div.tzgg ul li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "baseUrl": "http://jtj.hd.gov.cn/zwgk/wjgg/",
+        "allowUrlPrefixes": [
+          "http://jtj.hd.gov.cn/zwgk/wjgg/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "邯郸市",
+        "交通运输"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-zrgh-gggs-web",
+      "name": "邯郸市自然资源和规划局·公告公示",
+      "kind": "web_list",
+      "config": {
+        "url": "http://zrgh.hd.gov.cn/xwdt/gggs/",
+        "parseMode": "html",
+        "itemSelector": "ul.nt-entry-tp > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "baseUrl": "http://zrgh.hd.gov.cn/xwdt/gggs/",
+        "allowUrlPrefixes": [
+          "http://zrgh.hd.gov.cn/xwdt/gggs/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "邯郸市",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-zrgh-flfg-web",
+      "name": "邯郸市自然资源和规划局·政策法规",
+      "kind": "web_list",
+      "config": {
+        "url": "http://zrgh.hd.gov.cn/xxgk/fdgknr/flfg",
+        "parseMode": "html",
+        "itemSelector": "div.zfxxgk_zd2 ul > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "baseUrl": "http://zrgh.hd.gov.cn/xxgk/fdgknr/flfg",
+        "allowUrlPrefixes": [
+          "http://zrgh.hd.gov.cn/xxgk/fdgknr/flfg/",
+          "https://zrzy.hebei.gov.cn/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "邯郸市",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-mot-web",
+      "name": "河北省交通运输厅·省厅要闻",
+      "kind": "web_list",
+      "config": {
+        "url": "https://jtt.hebei.gov.cn/jtyst/jtzx/styw",
+        "parseMode": "html",
+        "itemSelector": "div.zc_p_listNr ul li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "baseUrl": "https://jtt.hebei.gov.cn/jtyst/jtzx/styw",
+        "allowUrlPrefixes": [
+          "https://jtt.hebei.gov.cn/jtyst/jtzx/styw/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "交通运输"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-ecology-web",
+      "name": "河北省生态环境厅·省厅动态",
+      "kind": "web_list",
+      "config": {
+        "url": "https://hbepb.hebei.gov.cn/hbhjt/xwzx/jihuanyaowen/",
+        "parseMode": "html",
+        "itemSelector": "div.p_list ul li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "baseUrl": "https://hbepb.hebei.gov.cn/hbhjt/xwzx/jihuanyaowen/",
+        "allowUrlPrefixes": [
+          "https://hbepb.hebei.gov.cn/hbhjt/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "生态环境"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-water-web",
+      "name": "河北省水利厅·水利要闻",
+      "kind": "web_list",
+      "config": {
+        "url": "http://slt.hebei.gov.cn/a/zx/txww/",
+        "parseMode": "html",
+        "itemSelector": "ul.item_lst li",
+        "linkSelector": "span.fl a",
+        "titleSelector": "span.fl a",
+        "baseUrl": "http://slt.hebei.gov.cn/a/zx/txww/",
+        "allowUrlPrefixes": [
+          "http://slt.hebei.gov.cn/a/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "水利"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hebei-szj-web",
+      "name": "河北省数据和政务服务局·行政执法公开",
+      "kind": "web_list",
+      "config": {
+        "url": "http://szj.hebei.gov.cn/zwgk/002001/002001005/goverList.html",
+        "parseMode": "html",
+        "itemSelector": "li.info-item",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtSelector": "span.info-time",
+        "baseUrl": "http://szj.hebei.gov.cn/zwgk/002001/002001005/goverList.html",
+        "allowUrlPrefixes": [
+          "http://szj.hebei.gov.cn/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "河北省",
+        "数据和政务服务"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-miit",
+      "name": "工信微报（工业和信息化部）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/2399501768.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "工信"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-mee",
+      "name": "生态环境部",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3269523047.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "生态环境"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-mot",
+      "name": "交通运输部",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3270400495.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "交通运输"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-mwr",
+      "name": "中国水利（水利部）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3553741093.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "水利"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-hd-miit",
+      "name": "邯郸工信",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3238432963.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "邯郸市",
+        "工信"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3903416442",
+      "name": "待确认公众号（3903416442）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3903416442.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3077105992",
+      "name": "待确认公众号（3077105992）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3077105992.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3091075063",
+      "name": "待确认公众号（3091075063）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3091075063.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3257455681",
+      "name": "待确认公众号（3257455681）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3257455681.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3265436760",
+      "name": "待确认公众号（3265436760）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3265436760.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3080075386",
+      "name": "待确认公众号（3080075386）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3080075386.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3004128450",
+      "name": "待确认公众号（3004128450）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3004128450.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3510978418",
+      "name": "待确认公众号（3510978418）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3510978418.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3002136124",
+      "name": "待确认公众号（3002136124）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3002136124.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3079058680",
+      "name": "待确认公众号（3079058680）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3079058680.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3295169138",
+      "name": "待确认公众号（3295169138）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3295169138.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3524284641",
+      "name": "待确认公众号（3524284641）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3524284641.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3098992634",
+      "name": "待确认公众号（3098992634）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3098992634.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-wechat-pending-3255918706",
+      "name": "待确认公众号（3255918706，已出11条待识别）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3255918706.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-manual-intake",
+      "name": "人工报送：部门公告",
+      "kind": "external",
+      "config": {},
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "邯郸市",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-stats-zxfb",
+      "name": "国家统计局·数据发布",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-stats-sjjd",
+      "name": "国家统计局·数据解读",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.stats.gov.cn/sj/sjjd/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "综合"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-sastind-fagui",
+      "name": "国防科工局·政策法规",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.sastind.gov.cn/n10086167/n10086221/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "工信"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-rsshub-mee-ywdt",
+      "name": "生态环境部·环境要闻（RSSHub）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/mee/ywdt/hjywnews",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "生态环境"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-rsshub-miit-zcjd",
+      "name": "工信部·政策解读（RSSHub）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/miit/zcjd",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "工信"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-rsshub-miit-wjgs",
+      "name": "工信部·文件公示（RSSHub）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/miit/wjgs",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "工信"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-rsshub-moa-zcjd",
+      "name": "农业农村部·政策解读（RSSHub）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/moa/suburl/gk/zcjd/",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "农业农村"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-rsshub-moa-zdscxx",
+      "name": "农业农村部·数据（RSSHub）",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://rsshub-kebtoyov.sealosbja.site/gov/moa/zdscxx",
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1_5",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "农业农村"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-digital-nr",
+      "name": "数智自然资源",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3207590652.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T1_5",
+      "enabled": false,
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-nr-forum",
+      "name": "自然资源讲坛",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3599022811.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T1_5",
+      "enabled": false,
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-land-observer",
+      "name": "土地观察",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3227070929.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "enabled": false,
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "自然资源"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-gis-edu",
+      "name": "GIS高等教育",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3247388884.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "enabled": false,
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "科学技术"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-bid-expert",
+      "name": "评标专家和评审专家",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3872885250.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "enabled": false,
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "发改"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-tender-expert",
+      "name": "招标采购专家通",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3935492513.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "enabled": false,
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "发改"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-bid-db",
+      "name": "招标-投标-评标入库",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://vaqlbqhb.sealosbja.site/feed/3988431695.xml",
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T2",
+      "enabled": false,
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "发改"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-most-zcjd",
+      "name": "科技部·政策解读",
+      "kind": "web_list",
+      "config": {
+        "url": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/zcjd/",
+        "parseMode": "html",
+        "itemSelector": "ul.a_list > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtSelector": ".w_list_rq",
+        "baseUrl": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/zcjd/",
+        "allowUrlPrefixes": [
+          "https://www.most.gov.cn/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "科学技术"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-mee-web-wj",
+      "name": "生态环境部·政策文件",
+      "kind": "web_list",
+      "config": {
+        "url": "https://www.mee.gov.cn/zcwj/bwj/wj/",
+        "parseMode": "html",
+        "itemSelector": "ul#div > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtSelector": "span.date",
+        "baseUrl": "https://www.mee.gov.cn/zcwj/bwj/wj/",
+        "allowUrlPrefixes": [
+          "https://www.mee.gov.cn/xxgk2018/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "生态环境"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-mee-web-gg",
+      "name": "生态环境部·公告",
+      "kind": "web_list",
+      "config": {
+        "url": "https://www.mee.gov.cn/zcwj/bwj/gg/",
+        "parseMode": "html",
+        "itemSelector": "ul#div > li",
+        "linkSelector": "a",
+        "titleSelector": "a",
+        "publishedAtSelector": "span.date",
+        "baseUrl": "https://www.mee.gov.cn/zcwj/bwj/gg/",
+        "allowUrlPrefixes": [
+          "https://www.mee.gov.cn/xxgk2018/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "生态环境"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "gov-mot-web-zcjd",
+      "name": "交通运输部·政策解读",
+      "kind": "web_list",
+      "config": {
+        "url": "https://www.mot.gov.cn/gongkai/zcjd/index.html",
+        "parseMode": "html",
+        "itemSelector": "ul.news-list > li.news-item",
+        "linkSelector": "a.news-link",
+        "titleSelector": "span.news-title",
+        "publishedAtSelector": "span.news-date",
+        "baseUrl": "https://www.mot.gov.cn/gongkai/zcjd/index.html",
+        "allowUrlPrefixes": [
+          "https://www.mot.gov.cn/gongkai/zcjd/"
+        ],
+        "_aihot": {
+          "initialBackfillLimit": 10
+        }
+      },
+      "tier": "T1",
+      "participation_mode": "editorial",
+      "interval_minutes": 180,
+      "tags": [
+        "国家",
+        "交通运输"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    }
   ]
 }
